@@ -7,7 +7,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rokkitt:100,300,400,700" rel="stylesheet">
-	
+	<script src="https://cdn.tailwindcss.com"></script>
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -59,49 +59,35 @@
 		         </div>
 					<div class="row">
 						<div class="col-sm-12 text-left menu-1">
-							<ul>
-								<li class="active"><a href="index.html">Home</a></li>
-								<li class="has-dropdown">
-									<a href="men.html">Men</a>
-									<ul class="dropdown">
-										<li><a href="product-detail.html">Product Detail</a></li>
-										<li><a href="cart.html">Shopping Cart</a></li>
-										<li><a href="checkout.html">Checkout</a></li>
-										<li><a href="order-complete.html">Order Complete</a></li>
-										<li><a href="add-to-wishlist.html">Wishlist</a></li>
-									</ul>
-								</li>
-								<li><a href="women.html">Women</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li class="cart"><a href="cart.html"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="sale">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-8 offset-sm-2 text-center">
-							<div class="row">
-								<div class="owl-carousel2">
-									<div class="item">
-										<div class="col">
-											<h3><a href="#">25% off (Almost) Everything! Use Code: Summer Sale</a></h3>
-										</div>
-									</div>
-									<div class="item">
-										<div class="col">
-											<h3><a href="#">Our biggest sale yet 50% off all summer shoes</a></h3>
-										</div>
-									</div>
+							<ul class="flex justify-between items-center">
+								<div class="flex space-x-4">
+									<li><a href="index.html">Home</a></li>
+									<li class="has-dropdown relative">
+										<a href="men.html">Men</a>
+										<ul class="dropdown absolute left-0 mt-2 space-y-2 bg-white shadow-lg p-4 hidden">
+											<li><a href="product-detail.html">Product Detail</a></li>
+											<li><a href="cart.html">Shopping Cart</a></li>
+											<li><a href="checkout.html">Checkout</a></li>
+											<li><a href="order-complete.html">Order Complete</a></li>
+											<li><a href="add-to-wishlist.html">Wishlist</a></li>
+										</ul>
+									</li>
+									<li><a href="women.html">Women</a></li>
+									<li class="active"><a href="about.html">About</a></li>
+									<li><a href="contact.html">Contact</a></li>
 								</div>
-							</div>
-						</div>
+								<div class="flex space-x-4">
+									<li><img class="w-10 h-10" src="/images/user.png" /></li>
+									<li><img class="w-10 h-10" src="/images/wishlist.png" /></li>
+							
+									<li class="cart"><a href="cart.html"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
+								</div>
+							</ul>
+					</div>
 					</div>
 				</div>
 			</div>
+				</div>
 		</nav>
 		<aside id="colorlib-hero">
 			<div class="flexslider">
@@ -131,11 +117,7 @@
 				   			<div class="col-sm-6 offset-sm-3 text-center slider-text">
 				   				<div class="slider-text-inner">
 				   					<div class="desc">
-					   					<h1 class="head-1">Huge</h1>
-					   					<h2 class="head-2">Sale</h2>
-					   					<h2 class="head-3"><strong class="font-weight-bold">50%</strong> Off</h2>
-					   					<p class="category"><span>Big sale sandals</span></p>
-					   					<p><a href="#" class="btn btn-primary">Shop Collection</a></p>
+					   					<p><a href="#" class="btn btn-primary ml-[850px] mt-[400px]">Shop Collection</a></p>
 				   					</div>
 				   				</div>
 				   			</div>
@@ -149,10 +131,6 @@
 				   			<div class="col-sm-6 offset-sm-3 text-center slider-text">
 				   				<div class="slider-text-inner">
 				   					<div class="desc">
-					   					<h1 class="head-1">New</h1>
-					   					<h2 class="head-2">Arrival</h2>
-					   					<h2 class="head-3">up to <strong class="font-weight-bold">30%</strong> off</h2>
-					   					<p class="category"><span>New stylish shoes for men</span></p>
 					   					<p><a href="#" class="btn btn-primary">Shop Collection</a></p>
 				   					</div>
 				   				</div>
